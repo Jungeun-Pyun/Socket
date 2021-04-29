@@ -164,7 +164,8 @@ socket.connect({host:ip, port:port}, function() {
 })
 ```
 
--   client 간 통신을 하더라도 결국은 server를 통해서 전달되기 때문에 server로부터 데이터를 받아오는 것을 볼 수 있다.
+-   client 간 통신을 하더라도 결국은 server를 통해서 전달되기 때문에 server로부터 데이터를 받아오는 것을 볼 수 있다.      
+      
 
 ![Terminal1 에서 client가 메세지 전송](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F8pNxB%2Fbtq3IQ8Q2sP%2FSJIY9zBlsB41qsKwau5YVk%2Fimg.png "Terminal1 에서 client가 메세지 전송")     
 _Terminal1 에서 client가 메세지 전송_           
