@@ -16,7 +16,7 @@ socket을 활용해서 통신할 때 사용하는 프로토콜이 TCP & UDP이�
 -   **socket.write** : socket 즉, 서버의 단말기 측으로 메시지를 보낸다.
 -   **socket.on('data'**,function(chunk){}) : socket으로부터 메시지(data)를 받아온다.
 -   console.log(**chunck.toString()**) : TCP로 전달받는 데이터는 buffer로 저장돼서 전달된다. 메시지로 표시하기 위해선 string화 해주어야 한다.
--   **socket.on('end',**function(){}) : socket이 접속 종료할 때 동작한다.
+-   **socket.on('end'**,function(){}) : socket이 접속 종료할 때 동작한다.
 -   **server.on('listening'**,function(){}) : 서버가 시작될 때 동작한다.
 -   **server.on('close'**,function(){}) : 서버가 종료될 때 동작한다.
 
@@ -166,8 +166,11 @@ socket.connect({host:ip, port:port}, function() {
 
 -   client 간 통신을 하더라도 결국은 server를 통해서 전달되기 때문에 server로부터 데이터를 받아오는 것을 볼 수 있다.
 
-![Terminal1 에서 client가 메세지 전송](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F8pNxB%2Fbtq3IQ8Q2sP%2FSJIY9zBlsB41qsKwau5YVk%2Fimg.png "Terminal1 에서 client가 메세지 전송")
-![Terminal2 에서 client가 메세지 받음](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FSNzCt%2Fbtq3GDBWLIk%2FCRe1AIccXqza9pZfK0ksTK%2Fimg.png "Terminal2 에서 client가 메세지 받음")
+![Terminal1 에서 client가 메세지 전송](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F8pNxB%2Fbtq3IQ8Q2sP%2FSJIY9zBlsB41qsKwau5YVk%2Fimg.png "Terminal1 에서 client가 메세지 전송") {:.alignleft}
+Terminal1 에서 client가 메세지 전송           
+           
+![Terminal2 에서 client가 메세지 받음](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FSNzCt%2Fbtq3GDBWLIk%2FCRe1AIccXqza9pZfK0ksTK%2Fimg.png "Terminal2 에서 client가 메세지 받음") {:.alignleft}
+Terminal2 에서 client가 메세지 받음
 
 #### 3\. UDP 기반 통신
 
