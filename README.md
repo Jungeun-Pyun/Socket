@@ -75,6 +75,7 @@ socket.connect({host:ip, port:port}, function() {
     socket.end() 
 })
 ```
+***
 
 #### 2\. TCP 기반 통신으로 채팅 구현
 
@@ -172,6 +173,8 @@ _Terminal1 에서 client가 메세지 전송_
            
 ![Terminal2 에서 client가 메세지 받음](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FSNzCt%2Fbtq3GDBWLIk%2FCRe1AIccXqza9pZfK0ksTK%2Fimg.png "Terminal2 에서 client가 메세지 받음")       
 _Terminal2 에서 client가 메세지 받음_
+
+***
 
 #### 3\. UDP 기반 통신
 
